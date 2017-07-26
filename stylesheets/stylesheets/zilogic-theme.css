@@ -1,0 +1,39 @@
+/* Zilogic Theme */
+
+div.presentationinfo {
+    color: #0;
+}
+
+h2, h3 {
+    color: #666;
+}
+
+h2, h3 {
+    border-bottom: 5px solid #de411a;
+}
+
+h1 {
+    color: #de411a;
+}
+
+#author {
+    color: #666;
+}
+
+#email tt {
+    color: #666;
+}
+
+div.tableblock > table {
+  border: 3px solid #de411a;
+}
+
+thead, p.table.header {
+  color: #de411a;
+}
+
+ul > li{ color: #666; }
+
+tt {
+  color: #de411a;
+}

@@ -1,0 +1,197 @@
+= Guide to ZDeck
+Zilogic Systems <info@zilogic.com>
+
+== Introduction
+
+=== Features
+
+  * Create beautiful presentations in minutes
+  * Supports
+    - Multi-level Bullet Points
+    - Diagrams & Images
+    - Tables
+    - Source Code with Syntax Highlighting
+    - Two Column Layout
+
+=== Formats
+
+  * ZDeck supports two formats
+  
+  * Lightning Format
+    - Less than 15 min duration
+
+  * Lecture Format
+    - More than 15 min duration
+
+=== Getting Started
+
+  * Create a folder for your presentation, and change to it
+  * Choose a format, and run `zdeck-init`
+  * Specify `lightning` or `lecture` as argument
++
+------
+$ zdeck-init lighting
+------
++
+  * This will populate the directory with a skeleton layout
+  * Run `make` to build the demo slides
+  * Open `slides.html` in a browser
+
+== Slide Formatting
+
+=== Presentation Title and Author
+
+  * The presentation title is specified in the first line
++
+------
+= Demo Slide Presentation
+Zilogic Systems <info@zilogic.com>
+------
++
+  * Author and email is specified in the second line
+
+=== Adding Slides
+
+  * For lightning format, new slides are created using
++
+------
+== Slide Title
+------
++
+  * For lecture format, new section must be created
+  * Slides must be withing sections
++
+------
+== Section Title
+=== Slide Title
+------
+
+=== Bullet Points
+
+==== Left
+
+  * Point 1
+  * Point 2
+
+==== Right
+
+  * Bullet points can be added using
++
+------
+  * Point 1
+  * Point 2
+------
+
+=== Multi-level Bullet Points
+
+==== Left
+
+  * Point 1
+    - Point A
+    - Point B
+  * Point 2
+    - Point C
+
+==== Right
+
+  * Two levels can be specified using
++
+------
+  * Point 1
+    - Point A
+    - Point B
+  * Point 2
+    - Point C
+------
+
+=== Adding Diagrams
+
+  * Create your diagrams in `dia`
+  * Store them within the `figures/` folder
+  * Insert them into your slides using
++
+------
+image::figures/sample.png[align="center",width="50%"]
+------
++
+  * `align` property can be one of: `left`, `right`, `center`
+  * `width` is specified relative to slide width
+
+=== Property: `align="center"`
+
+image::figures/sample.png[align="center",width="50%"]
+
+=== Property: `align="left"`
+
+image::figures/sample.png[align="left",width="50%"]
+
+=== Property: `align="right"`
+
+image::figures/sample.png[align="right",width="50%"]
+
+=== Property: `width="25%"`
+
+image::figures/sample.png[align="left",width="25%"]
+
+=== Property: `width="50%"`
+
+image::figures/sample.png[align="left",width="50%"]
+
+=== Property: `width="75%"`
+
+image::figures/sample.png[align="left",width="75%"]
+
+=== Adding Tables
+
+  * Create tables using the following syntax
++
+-------
+[options="header",width="50%",align="center"]
+|====
+| HEADING 1	| HEADING 2
+| ROW 1, COL 1	| ROW 1, COL 2
+| ROW 2, COL 1  | ROW 2, COL 2
+|====
+-------
++
+  * `width` and `align` is same as for images
+
+=== Table Rendering
+
+[options="header",width="50%",align="center"]
+|====
+| HEADING 1	| HEADING 2
+| ROW 1, COL 1	| ROW 1, COL 2
+| ROW 2, COL 1  | ROW 2, COL 2
+|====
+
+=== Two Column Layout
+
+  * Specify a 2nd level heading in case of lightning format
+
+  * Specify a 3rd level heading in case of lecture format
+  
+------
+==== Left
+
+  * BULLET-1
+  * BULLET-2
+
+==== Right
+
+  * BULLET-5
+  * BULLET-6
+------
+
+=== Two Column Rendering
+
+==== Left
+
+  * BULLET-1
+  * BULLET-2
+
+==== Right
+
+  * BULLET-5
+  * BULLET-6
+

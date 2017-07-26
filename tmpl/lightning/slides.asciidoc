@@ -1,0 +1,43 @@
+= PRESENTATION-TITLE
+Zilogic Systems
+
+== Bullets Demo
+
+  * BULLET-1
+  * BULLET-2
+
+== Image Demo
+
+image::figures/sample.png[align="center",width="50%"]
+
+== Table Demo
+
+[options="header",width="50%",align="center"]
+|====
+| HEADING 1 | HEADING 2
+| ROW 1	    | ROW 1
+| ROW 2	    | ROW 2
+|====
+
+== Two Column Demo
+
+=== Right
+
+[source,c]
+------
+#include <stdio.h>
+
+int main()
+{
+	printf("Hello World\n");
+	return 0;
+}
+------
+
+=== Left
+
+  * BULLET-1
+  * BULLET-2
+  * BULLET-3
+  * BULLET-4
+

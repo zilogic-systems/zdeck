@@ -1,0 +1,19 @@
+# -*- makefile -*-
+
+ZDECK_DIA_EXPORT_WIDTH ?= 1024
+XWIDTH = $(ZDECK_DIA_EXPORT_WIDTH)
+
+%.png: png_log_tmp := $(shell mktemp)
+%.png: %.dia
+	dia --filter=png-libart --size=$(XWIDTH) --export=$@ $< 2> $(png_log_tmp)
+	@trap "rm -f $(png_log_tmp)" EXIT; if grep Error $(png_log_tmp); then rm -f $@; exit 1; else exit 0; fi
+
+%.html: %.asciidoc
+	asciidoc -a zdeckclass=$(ZDECK_CLASS) -a data-uri -f $(ZDECK_HOME)/stylesheets/$(ZDECK_CLASS).conf $<
+
+%.datauri: %
+	python $(ZDECK_HOME)/scripts/data-uri.py $(MIMETYPE) $< > $@
+
+%.split: %
+	python $(ZDECK_HOME)/scripts/split.py $<
+	touch $@

@@ -12,8 +12,8 @@ XWIDTH = $(ZDECK_DIA_EXPORT_WIDTH)
 	asciidoc -a zdeckclass=$(ZDECK_CLASS) -a data-uri -f $(ZDECK_HOME)/stylesheets/$(ZDECK_CLASS).conf $<
 
 %.datauri: %
-	python $(ZDECK_HOME)/scripts/data-uri.py $(MIMETYPE) $< > $@
+	python3 $(ZDECK_HOME)/scripts/data-uri.py $(MIMETYPE) $< > $@
 
 %.split: %
-	python $(ZDECK_HOME)/scripts/split.py $<
+	python3 $(ZDECK_HOME)/scripts/split.py $<
 	touch $@

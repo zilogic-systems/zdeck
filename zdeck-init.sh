@@ -10,6 +10,7 @@ if [ -z $1 ]; then
     echo "Usage: zdeck-init <presentation-format>"
     echo
     echo "Supported Formats:" $(ls $ZDECK_HOME/tmpl/)
+    exit 1
 fi
 
 if [ -e $ZDECK_HOME/tmpl/$1 ]; then

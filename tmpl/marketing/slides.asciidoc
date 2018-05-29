@@ -1,0 +1,44 @@
+= PRESENTATION-TITLE
+Zilogic Systems
+
+== Bullets & Images
+
+=== Bullets Demo
+
+  * BULLET-1
+  * BULLET-2
+
+=== Image Demo
+
+image::figures/sample.png[align="center",width="50%"]
+
+== Tables & Two Column
+
+=== Table Demo
+
+[options="header",width="50%",align="center"]
+|======
+| HEADING 1 | HEADING 2
+| ROW 1	    | ROW 1
+| ROW 2	    | ROW 2
+|======
+
+[style="two-column"]
+=== Two Column Demo
+
+[style="right"]
+==== right
+
+  * BULLET-1
+  * BULLET-2
+  * BULLET-3
+  * BULLET-4
+
+[style="left"]
+==== left
+
+  * BULLET-1
+  * BULLET-2
+  * BULLET-3
+  * BULLET-4
+

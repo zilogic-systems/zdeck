@@ -1,0 +1,168 @@
+html, body {
+    background-color: #000;
+    margin:0;
+    padding:0;
+    overflow:hidden
+}
+
+h1, h2, h3, h4, h5, h6,
+div.title, caption.title,
+thead, p.table.header,
+#toctitle x{
+    font-family: "Montserrat-Bold";
+    font-weight: bold;
+    border: none;
+}
+
+svg {
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%
+}
+
+div.tableblock > table {
+    margin: 0 0 0 1.5em;
+    border: solid 2px #3f51b5;
+    text-align: center;
+    line-height: 0.2em;
+}
+thead { 
+    font-size: 7px;
+    line-height: 1em;
+}
+td {
+    border: dotted 1px #3f51b5;
+    font-size: 7px;
+}
+
+p.table {
+    margin: 0 0 0 0.2em;
+}
+div.two-column {
+    width: 80%;
+    float: left;
+}
+div.toolbar {
+    visibility: hidden;
+}
+
+div.sectionbody {
+    font-family: Karla;
+    margin-top: 60px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+sect2 ul {
+    overflow: hidden;
+    margin: 50px 50px 50px 50px;
+    list-style-type: disc;
+}
+sect2 > ul {
+    overflow: hidden;
+    margin: 0;
+    list-style-type: disc;
+}
+
+ul > li {
+    font-family: Karla;
+    font-size: 8px;
+    color: #4d4d4d;
+    line-height: 100%;
+}
+
+tspan {
+    width: 50em;
+    word-wrap: break-word;
+}
+
+tt {
+    color: #3f51b5;
+}
+
+foreignObject {
+    font-family: Karla;
+}
+
+h2 {
+    font-family; 'Montserrat';
+    font-size: 10px;
+    color: #673ab7;
+    border: none;
+    font-weight: bold;
+}
+
+ol, ul {
+    margin: 0.2em 1em 0.2em 1.2em;
+}
+foreignObject p {
+    margin-left: 5em;
+    font-family: "Karla-Regular";
+    font-size: 8px;
+    color: #4d4d4d;
+}
+
+foreignObject li {
+    margin-left: 1em;
+    font-family: "Karla-Regular";
+    font-size: 7px;
+    color: #4d4d4d;
+}
+
+h2.goal {
+    margin-top: 10em;
+    margin-left: 4em;
+    width: 25em;
+    height: 25em;
+    border: none;
+    font-family: Montserrat-Bold;
+    font-size: 12px;
+    color: #673ab7;
+}
+
+h2.sect1title {
+    margin-top: 10em;
+    margin-left: 4em;
+    width: 15em;
+    height: 15em;
+    border: none;
+    font-family: Montserrat-Bold;
+    font-size: 12px;
+    color: #f44336;
+}
+
+div.two-column div.left  ul {
+    margin: 0 0.2em 0.2em 1.2em;
+}
+
+div.two-column div.right ul {
+    margin: 0 1em 0.2em 0.2em;
+}
+
+div.right p {
+    margin-left: 0.5em;
+}
+
+pre {
+    font-size: 7px;
+}
+
+div.right img {
+    margin-top: 0em;
+    width: 50%;
+}
+
+div.nearby {
+    margin-top: -0.5em;
+}
+
+div.imageblock {
+    margin-top: 0em;
+}
+div.journey img {
+    margin-top: -0.5em;
+}

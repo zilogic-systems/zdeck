@@ -1,7 +1,21 @@
 /* Zilogic Theme */
 
 div.presentationinfo {
-    color: #0;
+    font-family: 'Montserrat-Bold';
+    color: #f44336;
+    width: 50%;
+    margin: 32% 0 0 8%;
+    line-height: 10px;
+}
+
+
+div.presentationinfo h1 {
+    font-size: 12px;
+}
+
+.help {
+    display: none;
+    visibility: hidden;
 }
 
 h2, h3 {
@@ -13,12 +27,18 @@ h1 {
 }
 
 #author {
-    color: #666;
+    font-family: 'Montserrat-SemiBold';
+    color: #f44336;
     position: left;
+    font-size: 8px;
 }
 
 #email tt {
-    color: #666;
+    font-family: 'Montserrat-Regular';
+    font-weight: normal;
+    color: #f44336;
+    position: left;
+    font-size: 8px;
 }
 
 div.tableblock > table {

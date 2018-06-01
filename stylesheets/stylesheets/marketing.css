@@ -49,8 +49,15 @@ div.toolbar {
 }
 
 div.sectionbody {
-    font-family: Karla;
-    margin-top: 60px;
+    font-family: Karla-Regular;
+    margin-top: 20px;
+}
+
+h2.sect2title {
+    font-family: 'Montserrat-Bold';
+    font-size: 10px;
+    color: #3f51b5;
+    margin-left: 10%;
 }
 
 ul {
@@ -69,7 +76,7 @@ sect2 > ul {
 }
 
 ul > li {
-    font-family: Karla;
+    font-family: Karla-Regular;
     font-size: 8px;
     color: #4d4d4d;
     line-height: 100%;
@@ -85,11 +92,15 @@ tt {
 }
 
 foreignObject {
-    font-family: Karla;
+    font-family: Karla-Regular;
+}
+
+foreignObject div.sectionbody {
+    width: 80%;
 }
 
 h2 {
-    font-family; 'Montserrat';
+    font-family; 'Montserrat-Regular';
     font-size: 10px;
     color: #673ab7;
     border: none;

@@ -22,6 +22,18 @@ svg {
     width:100%
 }
 
+div.pagenumber {
+    position: fixed;
+    top: 85%;
+    left: 87%;
+}
+div.pagenumber p {
+    font-size: 7px;
+    font-family: "Montserrat-Light";
+    text-align: right;
+    color: #fff;
+}
+
 div.tableblock > table {
     margin: 0 0 0 1.5em;
     border: solid 2px #3f51b5;

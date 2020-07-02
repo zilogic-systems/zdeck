@@ -1,4 +1,4 @@
-version = 0.1.0
+version = 0.2.0
 description = Generate beautiful slides from asciidoc files
 
 all: deb
@@ -10,12 +10,12 @@ home-install: install
 	echo "# If you want to use the system wide version" >> ~/.zdeck
 	echo "# delete this file." >> ~/.zdeck
 	echo "" >> ~/.zdeck
-	echo "ZDECK_HOME = ~/.local/share/zdeck" > ~/.zdeck
+	echo "ZDECK_HOME=~/.local/share/zdeck" > ~/.zdeck
 
 install:
 	mkdir -p $(install-dir)/share/zdeck/
 	cp -a scripts stylesheets tmpl $(install-dir)/share/zdeck/
-	mkdir -p ~/.local/bin
+	mkdir -p $(install-dir)/bin
 	cp -a zdeck-init.sh $(install-dir)/bin/zdeck-init
 
 clean-deb:

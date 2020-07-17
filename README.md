@@ -35,5 +35,24 @@ any kind of slides.
 
     $ dpkg -i zdeck*.deb
 
+## Usage
 
+ZDeck supports two type of presentation formats:
+
+  * Lightning Talks
+  * Lectures
+
+To create a presentation, create a folder for the presentation and
+within the folder invoke the following command.
+
+    $ zdeck-init <lecture|lightning>
+
+This populates the current directory with template files, to get you
+started. Run `make` to convert the `slides.asciidoc` file to
+`slides.html`
+
+    $ make
+
+Check the contents of the `slides.asciidoc` and the rendered output in
+`slides.html` to know the various constructs to create a presentation.
 

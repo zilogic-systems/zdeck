@@ -6,7 +6,7 @@ fi
 
 ZDECK_HOME=${ZDECK_HOME:-/usr/share/zdeck}
 
-if [ -z $1 ]; then
+if [ "$#" == "1" ]; then
     echo "Usage: zdeck-init <presentation-format>"
     echo
     echo "Supported Formats:" $(ls $ZDECK_HOME/tmpl/)
@@ -14,7 +14,12 @@ if [ -z $1 ]; then
 fi
 
 if [ -e $ZDECK_HOME/tmpl/$1 ]; then
-    cp -a $ZDECK_HOME/tmpl/$1/* .
+    if [ "$#" == "2" ]; then
+	mkdir $2
+	cp -a $ZDECK_HOME/tmpl/$1/* $2
+    else
+	cp -a $ZDECK_HOME/tmpl/$1/* .
+    fi	
 else
     echo "zdeck-init: incorrect presentation format" 2>&1
     exit 1

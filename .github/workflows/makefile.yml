@@ -1,0 +1,26 @@
+name: Debian Package
+
+on: [workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Dependency Installation
+      run: |
+        sudo apt update
+        sudo apt install make binutils -y
+        sudo apt install gem ruby -y --no-install-recommends
+        sudo gem install fpm
+      
+    - name: Create DEB Package 
+      run: make deb
+      
+    - name: Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: package
+        Path: zdeck*.deb
+        

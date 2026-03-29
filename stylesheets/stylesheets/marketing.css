@@ -36,7 +36,7 @@ div.pagenumber p {
 
 div.tableblock > table {
     margin: 0 0 0 1.5em;
-    border: solid 2px #3f51b5;
+    border: solid 0.5px #3f51b5;
     text-align: center;
     line-height: 0.2em;
 }
@@ -45,7 +45,7 @@ thead {
     line-height: 1em;
 }
 td {
-    border: dotted 1px #3f51b5;
+    border: dotted 0.5px #3f51b5;
     font-size: 7px;
 }
 
@@ -108,7 +108,7 @@ foreignObject {
 }
 
 foreignObject div.sectionbody {
-    width: 80%;
+    width: 90%;
 }
 
 h2 {
@@ -174,9 +174,11 @@ pre {
     font-size: 7px;
 }
 
+div.hide {
+    display: none;
+}
 div.right img {
     margin-top: 0em;
-    width: 50%;
 }
 
 div.nearby {

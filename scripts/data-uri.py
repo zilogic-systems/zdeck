@@ -17,7 +17,7 @@ def img_to_data(mime, path):
         raise FileNotFoundError
     with open(path, 'rb') as fp:
         data = fp.read()
-        data64 = b''.join(base64.encodestring(data).splitlines())
+        data64 = b''.join(base64.encodebytes(data).splitlines())
         return 'data:{};base64,{}'.format(mime, data64.decode("utf-8"))
 
 
